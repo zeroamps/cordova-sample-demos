@@ -1,0 +1,27 @@
+<nav class="navbar fixed-top navbar-dark bg-primary">
+  <a class="navbar-brand mx-auto" href="/"><i class="bi bi-activity"></i> Workout</a>
+</nav>
+<router-outlet></router-outlet>
+<nav class="navbar fixed-bottom navbar-light bg-light justify-content-center">
+  <ul class="nav nav-fill w-75">
+    <li class="nav-item text-center">
+      <button
+        class="btn nav-link shadow-none text-secondary"
+        routerLink=""
+        routerLinkActive="text-danger"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <i class="bi bi-speedometer fs-1"></i>
+      </button>
+    </li>
+    <li class="nav-item">
+      <botton class="btn nav-link shadow-none text-secondary" routerLink="history" routerLinkActive="text-danger">
+        <i class="bi bi-list-check fs-1"></i>
+      </botton>
+    </li>
+    <li class="nav-item">
+      <botton class="btn nav-link shadow-none text-secondary" routerLink="logging" routerLinkActive="text-danger">
+        <i class="bi bi-braces fs-1"></i>
+      </botton>
+    </li>
+  </ul>
+</nav>

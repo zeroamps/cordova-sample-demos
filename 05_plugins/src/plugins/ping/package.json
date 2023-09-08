@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-ping",
+  "version": "1.0.0",
+  "description": "Cordova Ping Plugin",
+  "cordova": {
+    "id": "cordova-plugin-ping",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ping",
+    "ecosystem:cordova",
+    "cordova-android"
+  ]
+}

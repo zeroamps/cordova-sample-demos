@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-echo",
+  "version": "1.0.0",
+  "description": "Cordova Echo Plugin",
+  "cordova": {
+    "id": "cordova-plugin-echo",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "echo",
+    "ecosystem:cordova",
+    "cordova-android"
+  ]
+}

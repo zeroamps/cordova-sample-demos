@@ -1,0 +1,12 @@
+<app-center-layout>
+  <ng-container *ngIf="!running; else template">
+    <button type="button" class="btn btn-lg btn-success w-75 mx-auto" (click)="start()">Start</button>
+  </ng-container>
+  <ng-template #template>
+    <h1 class="display-1 mb-0">{{ distance }}</h1>
+    <p>KM</p>
+    <h2 class="fs-6 mb-0">{{ duration }}</h2>
+    <p><i class="bi bi-clock"></i></p>
+    <button type="button" class="btn btn-lg btn-success w-75 mx-auto" (click)="finish()">Finish</button>
+  </ng-template>
+</app-center-layout>

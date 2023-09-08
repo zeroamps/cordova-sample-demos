@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-ping" version="1.0.0">
+    <name>Ping</name>
+    <description>Cordova Ping Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,ping</keywords>
+    <js-module src="www/ping.js" name="ping">
+        <clobbers target="cordova.plugins.ping" />
+    </js-module>
+
+    <platform name="android">
+        <framework src="com.android.volley:volley:1.2.1" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Ping" >
+                <param name="android-package" value="org.apache.cordova.ping.Ping"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Ping.java" target-dir="src/org/apache/cordova/ping" />
+        <source-file src="src/android/CounterService.java" target-dir="src/org/apache/cordova/ping" />
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service android:name="org.apache.cordova.ping.CounterService" android:enabled="true" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+            <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+        </config-file>
+    </platform>
+</plugin>

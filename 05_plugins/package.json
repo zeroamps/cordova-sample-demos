@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cordova": "^11.1.0",
+    "plugman": "^3.0.1"
+  }
+}

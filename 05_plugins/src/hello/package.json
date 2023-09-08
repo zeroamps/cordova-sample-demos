@@ -1,0 +1,20 @@
+{
+  "name": "com.example.hello",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cordova-android": "^11.0.0",
+    "cordova-plugin-echo": "file:../plugins/echo",
+    "cordova-plugin-ping": "file:../plugins/ping",
+    "cordova-plugin-timer": "file:../plugins/timer"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-echo": {},
+      "cordova-plugin-timer": {},
+      "cordova-plugin-ping": {}
+    }
+  }
+}

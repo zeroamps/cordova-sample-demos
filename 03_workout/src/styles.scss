@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@use '~bootstrap/scss/bootstrap';
+@use '~bootstrap-icons/font/bootstrap-icons';
+
+html,
+body {
+  height: 100%;
+}
+
+.pt-nav {
+  padding-top: 56px;
+}
+
+.pb-nav {
+  padding-bottom: 60px;
+}

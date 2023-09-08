@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-timer" version="1.0.0">
+    <name>Timer</name>
+    <description>Cordova Timer Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,timer</keywords>
+    <js-module src="www/timer.js" name="timer">
+        <clobbers target="cordova.plugins.timer" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Timer" >
+                <param name="android-package" value="org.apache.cordova.timer.Timer"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Timer.java" target-dir="src/org/apache/cordova/timer" />
+        <source-file src="src/android/CounterService.java" target-dir="src/org/apache/cordova/timer" />
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service android:name="org.apache.cordova.timer.CounterService" android:enabled="true" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+            <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+        </config-file>
+    </platform>
+</plugin>

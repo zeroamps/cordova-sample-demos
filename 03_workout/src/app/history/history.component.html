@@ -1,0 +1,11 @@
+<app-default-layout>
+  <table class="table small">
+    <tbody>
+      <tr *ngFor="let workout of workouts">
+        <td><i class="bi bi-calendar3"></i> {{ workout.started }}</td>
+        <td><i class="bi bi-clock"></i> {{ workout.duration }}</td>
+        <td>{{ workout.distance }} KM</td>
+      </tr>
+    </tbody>
+  </table>
+</app-default-layout>

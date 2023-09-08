@@ -1,0 +1,14 @@
+{
+  "name": "cordova-plugin-timer",
+  "version": "1.0.0",
+  "description": "Cordova Timer Plugin",
+  "cordova": {
+    "id": "cordova-plugin-timer",
+    "platforms": []
+  },
+  "keywords": [
+    "cordova",
+    "timer",
+    "ecosystem:cordova"
+  ]
+}

@@ -1,2 +1,3 @@
-# cordova-sample-demos
+# Cordova Sample Demos
+
 A collection of Cordova examples.
